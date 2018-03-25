@@ -8,6 +8,6 @@ namespace OrderingApplication.Services
 {
     public interface IOrderService
     {
-        List<Order> GetOrders();
+        List<OrderSummary> GetOrders();
     }
 }

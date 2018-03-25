@@ -42,7 +42,7 @@ namespace OrderingApplication
             services.AddMvc();
 
             services.AddScoped<OrderService, OrderService>();
-            services.AddTransient<IFormDataService, JsonFormDataService>();
+            services.AddScoped<IFormDataService, FormDataService>();
             services.AddTransient<IInventoryService, InventoryService>();
             services.AddSingleton<ISurveyService, SurveyService>();
         }

@@ -9,6 +9,6 @@ namespace OrderingApplication.ViewModels
     public class HomeViewModel
     {
         public string Title { get; set; }
-        public List<Order> Orders { get; set; }
+        public List<OrderSummary> Orders { get; set; }
     }
 }
