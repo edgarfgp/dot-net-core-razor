@@ -1,17 +1,10 @@
 ﻿using OrderingApplication.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OrderingApplication.Services
 {
-    public interface IOrder
-    {
-        List<Order> GetOrders();
-    }
-
-    public class OrderService : IOrder
+    public class OrderService : IOrderService
     {
         public List<Order> GetOrders()
         {
@@ -24,8 +17,8 @@ namespace OrderingApplication.Services
                 new Order() { Name = "Maecenas sed diam eget risus", LastUpdated = DateTime.Now.AddDays(-5), Description = "Maecenas sed diam eget risus varius blandit. Maecenas sed diam eget risus varius blandit. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit." },
                 new Order() { Name = "Donec id elit non", LastUpdated = DateTime.Now.AddDays(-15), Description = "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit." }
             };
-
-
         }
     }
+
+   
 }

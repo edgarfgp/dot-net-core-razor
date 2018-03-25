@@ -41,7 +41,10 @@ namespace OrderingApplication
 
             services.AddMvc();
 
-            services.AddTransient<OrderService, OrderService>();
+            services.AddScoped<OrderService, OrderService>();
+            services.AddTransient<IFormDataService, JsonFormDataService>();
+            services.AddTransient<IInventoryService, InventoryService>();
+            services.AddSingleton<ISurveyService, SurveyService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
