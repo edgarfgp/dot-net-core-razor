@@ -21,6 +21,7 @@ namespace OrderingApplication.Controllers
                 Orders = orders
 
             };
+
             return View(homeViewModel);
         }
 
